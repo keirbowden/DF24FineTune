@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<GenAiPromptTemplate xmlns="http://soap.sforce.com/2006/04/metadata">
+    <activeVersion>1</activeVersion>
+    <description>Generates a session proposal abstract for a Trailblazer event that isn&apos;t hosted by or targeting Salesforce.</description>
+    <developerName>Generic_Session_Proposal_Abstract</developerName>
+    <masterLabel>Generic Session Proposal Abstract</masterLabel>
+    <relatedEntity>Trailblazer_Event_Session__c</relatedEntity>
+    <relatedField>Trailblazer_Event_Session__c.Abstract__c</relatedField>
+    <templateVersions>
+        <content>Generate the abstract for a session proposal for the {!$Input:Trailblazer_Event_Session__c.Trailblazer_Event__r.Name} Trailblazer Event. Use the following information from the original idea to inform the decision:
+
+Name: {!$Input:Trailblazer_Event_Session__c.Session__r.Name}
+Description: {!$Input:Trailblazer_Event_Session__c.Session__r.Description__c}
+
+The abstract should not just repeat the original idea name or description, but should call out the benefits of the technology or approach.
+
+Limit the abstract to {!$Input:Trailblazer_Event_Session__c.Trailblazer_Event__r.Session_Abstract_Max_Length__c} characters.
+
+</content>
+        <inputs>
+            <apiName>RelatedEntity</apiName>
+            <definition>SOBJECT://Trailblazer_Event_Session__c</definition>
+            <referenceName>Input:Trailblazer_Event_Session__c</referenceName>
+            <required>true</required>
+        </inputs>
+        <primaryModel>sfdc_ai__DefaultOpenAIGPT35Turbo</primaryModel>
+        <status>Published</status>
+        <versionNumber>1</versionNumber>
+    </templateVersions>
+    <type>einstein_gpt__fieldCompletion</type>
+    <visibility>Global</visibility>
+</GenAiPromptTemplate>

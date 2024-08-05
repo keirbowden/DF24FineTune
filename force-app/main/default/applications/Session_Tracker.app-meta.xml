@@ -4,7 +4,7 @@
         <headerColor>#0070D2</headerColor>
         <shouldOverrideOrgTheme>false</shouldOverrideOrgTheme>
     </brand>
-    <description>Tracks sessions and submissions to Trailblazer events.</description>
+    <description>Tracks session idea, Trailblazer events and session submissions.</description>
     <formFactors>Small</formFactors>
     <formFactors>Large</formFactors>
     <isNavAutoTempTabsDisabled>false</isNavAutoTempTabsDisabled>
@@ -13,6 +13,58 @@
     <isOmniPinnedViewEnabled>false</isOmniPinnedViewEnabled>
     <label>Session Tracker</label>
     <navType>Standard</navType>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Trailblazer_Event_Session_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Trailblazer_Event_Session__c</pageOrSobjectType>
+        <recordType>Trailblazer_Event_Session__c.Generic_Event</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Trailblazer_Event_Session_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Trailblazer_Event_Session__c</pageOrSobjectType>
+        <recordType>Trailblazer_Event_Session__c.Generic_Event</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Trailblazer_Event_Session_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Trailblazer_Event_Session__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Trailblazer_Event_Session_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Trailblazer_Event_Session__c</pageOrSobjectType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Trailblazer_Event_Session_Salesforce_Record_Page</content>
+        <formFactor>Small</formFactor>
+        <pageOrSobjectType>Trailblazer_Event_Session__c</pageOrSobjectType>
+        <recordType>Trailblazer_Event_Session__c.Salesforce_Event</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
+    <profileActionOverrides>
+        <actionName>View</actionName>
+        <content>Trailblazer_Event_Session_Salesforce_Record_Page</content>
+        <formFactor>Large</formFactor>
+        <pageOrSobjectType>Trailblazer_Event_Session__c</pageOrSobjectType>
+        <recordType>Trailblazer_Event_Session__c.Salesforce_Event</recordType>
+        <type>Flexipage</type>
+        <profile>Admin</profile>
+    </profileActionOverrides>
     <tabs>Session__c</tabs>
     <tabs>Trailblazer_Event__c</tabs>
     <tabs>standard-report</tabs>
