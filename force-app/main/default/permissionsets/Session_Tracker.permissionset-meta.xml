@@ -69,6 +69,14 @@
         <object>Trailblazer_Event__c</object>
         <viewAllRecords>false</viewAllRecords>
     </objectPermissions>
+    <recordTypeVisibilities>
+        <recordType>Trailblazer_Event_Session__c.Generic_Event</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
+    <recordTypeVisibilities>
+        <recordType>Trailblazer_Event_Session__c.Salesforce_Event</recordType>
+        <visible>true</visible>
+    </recordTypeVisibilities>
     <tabSettings>
         <tab>Session__c</tab>
         <visibility>Visible</visibility>
