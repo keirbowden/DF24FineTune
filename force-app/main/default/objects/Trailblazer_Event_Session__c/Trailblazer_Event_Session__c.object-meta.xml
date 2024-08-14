@@ -156,12 +156,12 @@
     <externalSharingModel>ControlledByParent</externalSharingModel>
     <label>Trailblazer Event Session</label>
     <nameField>
-        <displayFormat>TES-{0000}</displayFormat>
         <label>Trailblazer Event Session Name</label>
         <trackHistory>false</trackHistory>
-        <type>AutoNumber</type>
+        <type>Text</type>
     </nameField>
     <pluralLabel>Trailblazer Event Sessions</pluralLabel>
+    <recordTypeTrackHistory>false</recordTypeTrackHistory>
     <searchLayouts></searchLayouts>
     <sharingModel>ControlledByParent</sharingModel>
     <visibility>Public</visibility>
